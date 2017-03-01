@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4D5E9811-4568-4E1C-8A3D-ECA2EF99E893</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Enjoy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1536B24457F6F0557D25860C0F366796B3F1C969</key>
+		<string>git.oschina.net:xuyuqin/Enjoy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Enjoy/Enjoy.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1536B24457F6F0557D25860C0F366796B3F1C969</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.oschina.net:xuyuqin/Enjoy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1536B24457F6F0557D25860C0F366796B3F1C969</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1536B24457F6F0557D25860C0F366796B3F1C969</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E5%A5%BD%E4%BA%AB%E7%98%A6</string>
+		</dict>
+	</array>
+</dict>
+</plist>

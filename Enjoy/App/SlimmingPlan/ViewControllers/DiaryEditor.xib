@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiaryEditor">
+            <connections>
+                <outlet property="sendBtn" destination="XlZ-jj-A3B" id="FXA-Dx-Kku"/>
+                <outlet property="text" destination="lG3-m8-cFQ" id="agE-BP-baU"/>
+                <outlet property="topView" destination="NkP-qL-AgA" id="ECy-aL-ts4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkP-qL-AgA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="337"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lG3-m8-cFQ">
+                            <rect key="frame" x="17" y="0.0" width="291" height="233"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="233" id="ok1-71-uB3"/>
+                            </constraints>
+                            <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="lG3-m8-cFQ" firstAttribute="top" secondItem="NkP-qL-AgA" secondAttribute="top" id="Opf-5E-JFR"/>
+                        <constraint firstAttribute="height" constant="337" id="ZeG-kl-4h2"/>
+                        <constraint firstAttribute="trailing" secondItem="lG3-m8-cFQ" secondAttribute="trailing" constant="12" id="jUJ-aA-B2M"/>
+                        <constraint firstItem="lG3-m8-cFQ" firstAttribute="leading" secondItem="NkP-qL-AgA" secondAttribute="leading" constant="17" id="zOb-vS-wbt"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlZ-jj-A3B">
+                    <rect key="frame" x="14" y="364" width="292" height="44"/>
+                    <color key="backgroundColor" red="0.4941176471" green="0.79215686269999996" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3Ze-rf-TqJ"/>
+                    </constraints>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NkP-qL-AgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Tw-Ep-zBt"/>
+                <constraint firstAttribute="trailing" secondItem="NkP-qL-AgA" secondAttribute="trailing" id="4C1-cu-cBJ"/>
+                <constraint firstItem="XlZ-jj-A3B" firstAttribute="top" secondItem="NkP-qL-AgA" secondAttribute="bottom" constant="27" id="AL7-ac-R1I"/>
+                <constraint firstItem="XlZ-jj-A3B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="Cju-I6-5NO"/>
+                <constraint firstItem="NkP-qL-AgA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fXA-Ad-U15"/>
+                <constraint firstAttribute="trailing" secondItem="XlZ-jj-A3B" secondAttribute="trailing" constant="14" id="zZX-Fz-b0L"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="275" y="258"/>
+        </view>
+    </objects>
+</document>

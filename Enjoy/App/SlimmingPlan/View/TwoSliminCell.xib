@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TwoSliminCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="体重记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfR-8m-Evv">
+                        <rect key="frame" x="51" y="10" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="79K-XP-4Ep"/>
+                            <constraint firstAttribute="width" constant="68" id="8Rv-Hy-Eki"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIp-7D-Tnb">
+                        <rect key="frame" x="54" y="45" width="212" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日体重：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWY-EJ-Ks3">
+                                <rect key="frame" x="33" y="16" width="66" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Suy-Qk-FKn"/>
+                                    <constraint firstAttribute="width" constant="66" id="V8i-HU-1H6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60KG" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgq-Fn-pMU">
+                                <rect key="frame" x="108" y="8" width="104" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="xTb-bd-FJR"/>
+                                    <constraint firstAttribute="height" constant="30" id="y27-uD-01d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="212" id="6iD-1e-9mx"/>
+                            <constraint firstItem="iWY-EJ-Ks3" firstAttribute="leading" secondItem="fIp-7D-Tnb" secondAttribute="leading" constant="33" id="7rc-aO-H1b"/>
+                            <constraint firstItem="zgq-Fn-pMU" firstAttribute="leading" secondItem="iWY-EJ-Ks3" secondAttribute="trailing" constant="9" id="8ih-mx-UnD"/>
+                            <constraint firstAttribute="height" constant="44" id="NnW-I2-LM4"/>
+                            <constraint firstItem="zgq-Fn-pMU" firstAttribute="top" secondItem="fIp-7D-Tnb" secondAttribute="top" constant="8" id="RLx-xX-zcg"/>
+                            <constraint firstItem="iWY-EJ-Ks3" firstAttribute="top" secondItem="fIp-7D-Tnb" secondAttribute="top" constant="16" id="VL1-78-I2s"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-Wv-AcP">
+                        <rect key="frame" x="18" y="87" width="284" height="46"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4y-jN-zGp">
+                                <rect key="frame" x="24" y="6" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="86V-K0-tgd"/>
+                                    <constraint firstAttribute="height" constant="29.5" id="ajb-PA-7mf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" backgroundImage="ic_a33_05">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-el-Sj3">
+                                <rect key="frame" x="152" y="5" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29.5" id="EAi-zH-fUn"/>
+                                    <constraint firstAttribute="width" constant="120" id="trp-jR-RC2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" backgroundImage="ic_a33_06">
+                                    <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fKb-el-Sj3" firstAttribute="top" secondItem="Tey-Wv-AcP" secondAttribute="top" constant="5" id="DeP-9K-Bl6"/>
+                            <constraint firstAttribute="width" constant="284" id="KtC-ND-LMl"/>
+                            <constraint firstItem="fKb-el-Sj3" firstAttribute="leading" secondItem="d4y-jN-zGp" secondAttribute="trailing" constant="8" id="Pi2-C6-LdW"/>
+                            <constraint firstItem="d4y-jN-zGp" firstAttribute="leading" secondItem="Tey-Wv-AcP" secondAttribute="leading" constant="24" id="VQ5-ix-Q5q"/>
+                            <constraint firstAttribute="height" constant="45.5" id="ahX-hw-kcc"/>
+                            <constraint firstItem="d4y-jN-zGp" firstAttribute="top" secondItem="Tey-Wv-AcP" secondAttribute="top" constant="6" id="jya-X5-d2W"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_a33_123" translatesAutoresizingMaskIntoConstraints="NO" id="dHR-uf-dxB">
+                        <rect key="frame" x="18" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="GIj-hn-7Nd"/>
+                            <constraint firstAttribute="width" constant="25" id="mPv-vV-y2V"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="Tey-Wv-AcP" secondAttribute="bottom" constant="9" id="HxB-Ug-elM"/>
+                    <constraint firstItem="dHR-uf-dxB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="OF5-74-T4E"/>
+                    <constraint firstItem="xfR-8m-Evv" firstAttribute="leading" secondItem="dHR-uf-dxB" secondAttribute="trailing" constant="8" id="OM8-3P-FKb"/>
+                    <constraint firstItem="xfR-8m-Evv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="T5R-6Y-PVk"/>
+                    <constraint firstItem="fIp-7D-Tnb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="X4w-0n-WcW"/>
+                    <constraint firstItem="Tey-Wv-AcP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hPn-PY-6tG"/>
+                    <constraint firstItem="fIp-7D-Tnb" firstAttribute="top" secondItem="xfR-8m-Evv" secondAttribute="bottom" constant="14" id="qdd-VF-Pi7"/>
+                    <constraint firstItem="dHR-uf-dxB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="r2k-xR-Xs6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="fatSaid" destination="fKb-el-Sj3" id="rVm-Po-EUM"/>
+                <outlet property="recordWeight" destination="d4y-jN-zGp" id="FkC-eU-nda"/>
+                <outlet property="weightLab" destination="zgq-Fn-pMU" id="hRA-5L-POb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_a33_05" width="120" height="29"/>
+        <image name="ic_a33_06" width="120" height="29"/>
+        <image name="ic_a33_123" width="25" height="25"/>
+    </resources>
+</document>

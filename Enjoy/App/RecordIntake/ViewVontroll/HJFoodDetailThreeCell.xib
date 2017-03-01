@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HJFoodDetailThreeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkW-Dm-hWr">
+                        <rect key="frame" x="11" y="8" width="108" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="0qI-BN-y71"/>
+                            <constraint firstAttribute="width" constant="108" id="vgF-D5-Agn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="  草莓色泽鲜艳" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A4X-AY-iwX">
+                        <rect key="frame" x="11" y="30" width="296" height="112"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="A4X-AY-iwX" firstAttribute="top" secondItem="NkW-Dm-hWr" secondAttribute="bottom" constant="1" id="Gsk-Cr-9Wm"/>
+                    <constraint firstItem="A4X-AY-iwX" firstAttribute="leading" secondItem="NkW-Dm-hWr" secondAttribute="leading" id="W2Q-0k-LIS"/>
+                    <constraint firstAttribute="bottom" secondItem="A4X-AY-iwX" secondAttribute="bottom" constant="8" id="YQd-sS-RUS"/>
+                    <constraint firstItem="NkW-Dm-hWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="fHS-lb-YYF"/>
+                    <constraint firstItem="NkW-Dm-hWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="mdF-Dt-GcL"/>
+                    <constraint firstAttribute="trailing" secondItem="A4X-AY-iwX" secondAttribute="trailing" constant="13" id="tVc-13-JQL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="remarkLab" destination="A4X-AY-iwX" id="gbX-b9-eBF"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,38 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CEAF016C56EBAE418501F25A72374AE24648C09A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1536B24457F6F0557D25860C0F366796B3F1C969" : 0,
+    "CEAF016C56EBAE418501F25A72374AE24648C09A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4D5E9811-4568-4E1C-8A3D-ECA2EF99E893",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1536B24457F6F0557D25860C0F366796B3F1C969" : "%E5%A5%BD%E4%BA%AB%E7%98%A6",
+<<<<<<< HEAD
+    "CEAF016C56EBAE418501F25A72374AE24648C09A" : "%E5%A5%BD%E4%BA%AB%E5%8F%97\/"
+=======
+    "CEAF016C56EBAE418501F25A72374AE24648C09A" : "%E5%A5%BD%E4%BA%AB%E7%98%A6git\/"
+>>>>>>> d4b5cdf044f6ae87ec9739efb4e8b680c072608c
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Enjoy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Enjoy\/Enjoy.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:xuyuqin\/Enjoy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1536B24457F6F0557D25860C0F366796B3F1C969"
+    },
+    {
+<<<<<<< HEAD
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:xuyuqin\/Enjoy.git",
+=======
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/xuyuqin\/Enjoy.git",
+>>>>>>> d4b5cdf044f6ae87ec9739efb4e8b680c072608c
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CEAF016C56EBAE418501F25A72374AE24648C09A"
+    }
+  ]
+}

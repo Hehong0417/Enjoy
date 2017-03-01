@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DiaryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_a33_11" translatesAutoresizingMaskIntoConstraints="NO" id="36X-7X-Rug">
+                        <rect key="frame" x="18" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="MgZ-5Q-3iK"/>
+                            <constraint firstAttribute="width" constant="25" id="Mja-xH-Inb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="减肥日记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hn4-st-hAJ">
+                        <rect key="frame" x="51" y="10" width="68" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="6cY-Vv-mFC"/>
+                            <constraint firstAttribute="height" constant="21" id="XDh-XF-GvS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每天记录，见证蜕变过程！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAE-at-6Hy">
+                        <rect key="frame" x="51" y="45" width="156" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RlS-Um-Ob0"/>
+                            <constraint firstAttribute="width" constant="156" id="mBz-yg-h3f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dl-1d-v52">
+                        <rect key="frame" x="51" y="74" width="243" height="168"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_a33_12" translatesAutoresizingMaskIntoConstraints="NO" id="i2o-gD-8P8">
+                                <rect key="frame" x="85" y="49" width="73" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ztj-mS-DHz"/>
+                                    <constraint firstAttribute="width" constant="73" id="hii-18-qYE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.69803921568627447" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="i2o-gD-8P8" secondAttribute="bottom" constant="49" id="IdS-Wm-dPG"/>
+                            <constraint firstItem="i2o-gD-8P8" firstAttribute="centerX" secondItem="9dl-1d-v52" secondAttribute="centerX" id="LKv-Qa-fL0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EAE-at-6Hy" firstAttribute="top" secondItem="hn4-st-hAJ" secondAttribute="bottom" constant="14" id="0jz-hO-fch"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9dl-1d-v52" secondAttribute="bottom" constant="9.5" id="24N-m1-N0G"/>
+                    <constraint firstItem="36X-7X-Rug" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="A2T-2Z-fL1"/>
+                    <constraint firstItem="9dl-1d-v52" firstAttribute="top" secondItem="EAE-at-6Hy" secondAttribute="bottom" constant="8" id="A59-Ff-gcK"/>
+                    <constraint firstItem="hn4-st-hAJ" firstAttribute="leading" secondItem="36X-7X-Rug" secondAttribute="trailing" constant="8" id="ORZ-C4-aNX"/>
+                    <constraint firstItem="9dl-1d-v52" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="43" id="OV9-4c-aBK"/>
+                    <constraint firstItem="36X-7X-Rug" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="P6n-Uz-NE0"/>
+                    <constraint firstItem="hn4-st-hAJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="gou-qB-iaO"/>
+                    <constraint firstItem="EAE-at-6Hy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="43" id="liQ-8h-6Nj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9dl-1d-v52" secondAttribute="trailing" constant="18" id="ty9-Bb-aRC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ViewBtn" destination="9dl-1d-v52" id="vCn-3E-eow"/>
+            </connections>
+            <point key="canvasLocation" x="205" y="202"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_a33_11" width="25" height="25"/>
+        <image name="ic_a33_12" width="73" height="69"/>
+    </resources>
+</document>

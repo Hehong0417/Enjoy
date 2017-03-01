@@ -1,0 +1,190 @@
+//
+//  Enjoy-prefix.pch
+//  Enjoy
+//
+//  Created by zhipeng-mac on 16/2/25.
+//  Copyright (c) 2016年 hejing. All rights reserved.
+//
+
+#ifndef Enjoy_Enjoy_prefix_pch
+#define Enjoy_Enjoy_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// opensource
+#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
+#import <BlocksKit/BlocksKit+UIKit.h>
+#import <Masonry/Masonry.h>
+#import <Aspects/Aspects.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <SVProgressHUD.h>
+
+
+
+// config
+#import "APIAddress.h"
+#import "AppConfig.h"
+#import "AppMacros.h"
+// xu
+#import <YYCategories/YYCategories.h>
+#import "XYQButton.h"
+#import "HJGroupItem.h"
+#import "HJSettingItem.h"
+#import "HJLog.h"
+#import "HJTabBarController.h"
+#import "HJNavigationController.h"
+
+// mine
+#import "LHUtils.h"
+#import "HJProtocol.h"
+
+//Constant
+#import "Constant.h"
+
+
+//// 本地
+//#define API_HOST @"http://192.168.0.11:8090"
+////#define API_HOST @"http://192.168.0.101:7080"
+//
+//// 本地图片
+//#define API_IMAGE_HOST @"http://192.168.0.11:7080/"
+//// 阿里云
+//#define API_HOST @"http://120.24.182.187:8090"
+////// 阿里云图片
+//#define API_IMAGE_HOST @"http://120.24.182.187:7080/"
+
+#define APP_key @"59334e721bcd31"
+#define APP_scode @"0b9aa15373515ee38120d7caf42a6946" // 百事慧
+////MD5加密（APP_key+”weicai”）
+//#define API_APP_BASE_URL @"anticancer"
+//
+//#define API_BASE_URL [NSString stringWithFormat:@"%@/%@", API_HOST, API_APP_BASE_URL]
+//#define API_QR_BASE_URL [NSString stringWithFormat:@"%@/image", API_BASE_URL]
+//
+//// 接口
+//#define API_SUB_URL(_url) [NSString stringWithFormat:@"%@/%@", API_BASE_URL, _url]
+//#define API_SUB_URL(_url) [NSString stringWithFormat:@"%@/%@", API_BASE_URL, _url]
+//
+//// 图片
+//#define kAPIImageFromUrl(url) [NSString stringWithFormat:@"%@%@", API_IMAGE_HOST, url]
+
+//H5 url
+//康友圈
+#define HealthFriend_URL @"http://192.168.0.199:8020/yangguangkangai/index.html"
+//专题圈
+#define Subject_URL @"http://192.168.0.199:8020/yangguangkangai/thematicCircle.html"
+//康友圈详情
+#define HealthFriend_Detail_URL @"http://192.168.0.199:8020/yangguangkangai/dynamic.html"
+//专题圈详情
+#define Suject_Detail_URL @"http://192.168.0.199:8020/yangguangkangai/recom.html"
+//专题圈帖子详情
+#define Invation_Detail_URL @"http://192.168.0.199:8020/yangguangkangai/postDetails.html"
+
+/**
+ *  三、首页
+ */
+
+//3.1获取首页
+#define API_HOME_GET_HOME_INFO API_SUB_URL(@"home/getHomeInfo.do")
+//3.2健康档案
+#define API_GET_USER_INFO API_SUB_URL(@"home/getUserInfo.do")
+//3.3健康档案保存
+#define API_SAVE_USER_INFO API_SUB_URL(@"home/saveUserInfo.do")
+//3.4 文章详情
+#define API_ARTICLE_DETAILS API_SUB_URL(@"home/articleDetails.do")
+//3.5首页搜索
+#define API_ARTICLE_SEARCH API_SUB_URL(@"home/articleSearch.do")
+//3.6文章操作
+#define API_ARTICLE_OPERATE API_SUB_URL(@"home/articleOperate.do")
+//3.7文章评论列表
+#define API_ARTICLE_COMMENT_LIST API_SUB_URL(@"home/articleCommentList.do")
+//3.8文章评论保存
+#define API_HOME_SAVE_COMMENT API_SUB_URL(@"home/saveComment.do")
+//3.9健康头条
+#define API_HEALTH_HEAD API_SUB_URL(@"home/healthHead.do")
+//3.10祈福墙
+#define API_HOME_GET_BLESS_LIST API_SUB_URL(@"home/getblessList.do")
+//3.11发布日志
+#define API_SAVE_DIARY API_SUB_URL(@"home/saveDiary.do")
+//3.12圈子列表
+#define API_GET_COMMUNITY_LIST API_SUB_URL(@"home/getCommunityList.do")
+//3.13保存专题
+#define API_HOME_SAVE_INVITATION API_SUB_URL(@"home/saveInvitation.do")
+//3.14保存祈福
+#define API_HOME_SAVE_BLESS API_SUB_URL(@"home/saveBless.do")
+//3.15 获取用户选择标签记录
+#define API_GET_TAG_RECORD API_SUB_URL(@"home/getTagRecord.do")
+//3.16 保存用户选择标签记录
+#define API_SAVE_TAG_RECORD API_SUB_URL(@"home/saveTagRecord.do")
+//3.17文章取消操作
+#define API_ARTICLE_CANCEL API_SUB_URL(@"home/articleCancel.do")
+//3.18祈福
+#define API_HAVE_BLESS API_SUB_URL(@"home/haveBless.do")
+//3.19 取消祈福
+#define API_CANCEL_BLESS API_SUB_URL(@"home/cancelBless.do")
+//3.20 获取文章标签列表
+#define API_GET_TAG_LIST API_SUB_URL(@"home/getTagList.do")
+
+/**
+ *  四、圈子
+ */
+//4.1是否首次进入圈子
+#define API_IS_FIRST API_SUB_URL(@"community/isFirst.do")
+//4.2获取康友圈列表
+#define API_GET_DIARY_LIST API_SUB_URL(@"community/getDiaryList.do")
+//4.3动态详情
+#define API_GET_DIARY_DETAILED API_SUB_URL(@"community/getDiaryDetailed.do")
+//4.4专题圈首页
+#define API_COMU_GET_HOME_INFO API_SUB_URL(@"community/getHomeInfo.do")
+//4.5专题圈详情
+#define API_GET_COMMUNITY_INFO API_SUB_URL(@"community/getCommunityInfo.do")
+//4.6帖子详情
+#define API_GET_INVITATION_INFO API_SUB_URL(@"community/getInvitationInfo.do")
+//4.7加入圈子
+#define API_JOIN_COMMUNITY API_SUB_URL(@"community/joinCommunity.do")
+//4.8保存帖子评论
+#define API_SAVE_INVITATION_COMMENT API_SUB_URL(@"community/saveComment.do")
+//4.9推荐关注列表
+#define API_IS_RECOMMEND_LIST API_SUB_URL(@"community/isRecommendList.do")
+//4.10一键关注
+#define API_ONE_KEY_ATTENTION API_SUB_URL(@"community/oneKeyAttention.do")
+/**
+ *  五、消息
+ */
+//5.1消息主页
+#define API_GET_MESSAGE_LIST API_SUB_URL(@"message/getMessageList.do")
+//5.2获取评论消息列表
+#define API_MESSAGE_GET_MESSAGE_LIST API_SUB_URL(@"message/getCommentMessageList.do")
+//5.3获取祈福消息列表
+#define API_MESSAGE_GET_BLESS_LIST API_SUB_URL(@"message/getBlessMessageList.do")
+//5.4获取点赞消息列表
+#define API_GET_LIKE_MESSAGE_LIST API_SUB_URL(@"message/getLikeMessageList.do")
+
+/**
+ *  六、个人中心
+ */
+//6.1个人中心主页
+#define API_USERINDEX_GET_HOME_INFO API_SUB_URL(@"userIndex/getHomeInfo.do")
+//6.2获取粉丝/关注列表
+#define API_GET_FOLLOWER_LIST API_SUB_URL(@"userIndex/getFollowerList.do")
+//6.3我的收藏
+#define API_GET_COLLECTION_LIST API_SUB_URL(@"userIndex/getCollectionList.do")
+//6.4 个人信息
+#define API_USERINDEX_GET_USER_INFO API_SUB_URL(@"userIndex/getUserInfo.do")
+//6.5 修改个人信息
+#define API_UPDATE_USER_INFO API_SUB_URL(@"userIndex/updateUserInfo.do")
+//6.6 修改个人密码
+#define API_UPDATE_PASS_WORD API_SUB_URL(@"userIndex/updatePassWord.do")
+//6.7 俱乐部信息
+#define API__GET_CLUB_INFO API_SUB_URL(@"userIndex/getClubInfo.do")
+//6.8 关注/取消关注
+#define API_OPERATE_ATTENTION API_SUB_URL(@"userIndex/operateAttention.do")
+//6.9 删除收藏
+#define API_DELETE_COLLECTION API_SUB_URL(@"userIndex/deleteCollection.do")
+//6.10 个人中心主页(其他用户)
+#define API_GET_OTHER_USER_HOME_INFO API_SUB_URL(@"userIndex/getOtherUserHomeInfo.do")
+
+#endif
